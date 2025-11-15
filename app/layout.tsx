@@ -15,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className="antialiased">
+      <body
+        suppressHydrationWarning
+        className="min-h-screen antialiased bg-[linear-gradient(to_bottom_right,#242615,#2E2D19,#342814,#3A2312,#1F1812,#2B2623)]"
+      >
         <SplashScreen />
         <main>{children}</main>
       </body>

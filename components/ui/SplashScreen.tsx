@@ -3,20 +3,14 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-type TimeLeft = {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
-} | null;
+import { TimerItems } from "@/types";
 
 export default function SplashScreen() {
   const router = useRouter();
 
-  // Set your target date and time here
   const targetDate = new Date("2025-11-10T00:18:00"); // YYYY-MM-DDTHH:MM:SS
 
-  const calculateTimeLeft = (): TimeLeft => {
+  const calculateTimeLeft = (): TimerItems => {
     const now = new Date();
     const difference = targetDate.getTime() - now.getTime();
 
@@ -30,11 +24,10 @@ export default function SplashScreen() {
     };
   };
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
-  const [exiting, setExiting] = useState(false); // // on changes: added for animation
+  const [timeLeft, setTimeLeft] = useState<TimerItems>(calculateTimeLeft());
+  const [exiting, setExiting] = useState(false);
 
   useEffect(() => {
-    // // on changes: prevent scrolling while splash active
     if (timeLeft) {
       document.documentElement.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
