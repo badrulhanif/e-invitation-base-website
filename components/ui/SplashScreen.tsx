@@ -61,7 +61,7 @@ export default function SplashScreen() {
         }
       />
       <p className="absolute bottom-24 text-base text-white/50">
-        Tap anywhere to listen music
+        Tap anywhere to play music
       </p>
     </div>
   );
