@@ -1,70 +1,69 @@
 export function sendEmailTemplate() {
   return `
-  <div style="background-color:#ea580c; padding:24px;">
-  <div style="max-width:600px; margin:0 auto; font-family:Arial,sans-serif; color:#ffffff; background:#000; border-radius:16px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-    <div style="padding:24px;">
-      <!-- Logo -->
-      <img src="https://www.citrusarc.studio/Images/brand-logo.png" 
-           alt="Citrus Arc Studio Logo" 
-           style="width:200px; height:auto; display:block; margin-bottom:16px;" />
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+<div style="background: linear-gradient(to bottom right, #242615, #2E2D19, #342814, #3A2312, #1F1812, #2B2623); padding:24px;">
+  <div style="max-width:600px; margin:0 auto; text-align:center; font-family:Arial,sans-serif; color:#ffffff; background-color: rgba(255,255,255,0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius:16px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+    <div style="padding:36px;">
+
 
       <!-- Header -->
-      <h2 style="margin:0 0 8px; font-size:22px; font-weight:600; color:#ffffff;">Thanks for reaching out!</h2> 
+      <h2 style="margin:0 0 16px; font-family:'Marcellus', serif; font-size:24px; color:#ffffff;">Birthday Sayang Celebration</h2> 
 
       <!-- Intro paragraph -->
-      <p style="margin:0 0 16px; font-size:14px; color:#a3a3a3; line-height:1.5;">
-        We’ve received your message and we’re excited to learn more about your project.<br />
-        Here’s a quick summary of what you sent us:
+      <p style="margin:0 0 36px; font-size:16px; color:rgba(255,255,255,0.8); line-height:1.5;">
+      You’ve been invited to a day full of pleasure and surprises… <br />
+       A day made for laughs, heat, and moments that’ll leave you breathless.
       </p>
-
-      <!-- Glass effect container -->
-      <div style="
-          display:flex; 
-          flex-direction:column; 
-          gap:12px; 
-          border-radius:12px; 
-          background: rgba(255, 255, 255, 0.2); 
-          backdrop-filter: blur(10px); 
-          -webkit-backdrop-filter: blur(10px); 
-          border: 1px solid rgba(255,255,255,0.15); 
-          padding:16px;
-        "> 
-
-        <!-- Individual field -->
-       <table style="width:100%; border-collapse:collapse; font-size:14px;">
-  <tbody>
-    <tr >
-      <td style="padding:8px; color:#a3a3a3; width:35%;">Full Name</td>
-      <td style="padding:8px; color:#ffffff; font-size:16px; font-weight:500;">Full Name</td>
-    </tr>
-    <tr >
-      <td style="padding:8px; color:#a3a3a3;">Email</td>
-      <td style="padding:8px; color:#ffffff; font-size:16px; font-weight:500;">Email</td>
-    </tr>
-    <tr >
-      <td style="padding:8px; color:#a3a3a3;">Phone Number</td>
-      <td style="padding:8px; color:#ffffff; font-size:16px; font-weight:500;">Phone Number</td>
-    </tr>
-    <tr >
-      <td style="padding:8px; color:#a3a3a3;">Budget</td>
-      <td style="padding:8px; color:#ffffff; font-size:16px; font-weight:500;">Budget</td>
-    </tr>
-    <tr >
-      <td style="padding:8px; color:#a3a3a3; vertical-align:top;">Describe Your Project</td>
-      <td style="padding:8px; color:#ffffff; font-size:16px; font-weight:500;">Project</td>
-    </tr>
-  </tbody>
-</table>
-
-    </div>
-
-    <!-- Footer -->
-    <div style="color:#a3a3a3; text-align:center; padding:20px; font-size:14px;">
-        <p style="margin:4px 0;">
-        <a href="https://citrusarc.studio" style="color:#a3a3a3;">citrusarc.studio</a>
-      </p>
-      <p style="margin:4px 0;">© ${new Date().getFullYear()} Citrus Arc Studio. All rights reserved.</p>
       
+       <!-- Body -->
+      <div style="margin-bottom:36px; line-height:1.5; text-align:center;">
+  <!-- Initiary title -->
+  <p style="margin:4px 0; font-family:'Marcellus', serif; font-size:24px; color:#ffffff;">
+    Initiary
+  </p>
+  
+  <!-- Initiary schedule -->
+  <ul style="list-style:none; padding:0; margin:8px 0; color:rgba(255,255,255,0.85); font-size:16px; line-height:1.6;">
+    <li style="margin:6px 0;">I will pick you up</li>
+    <li style="margin:6px 0;">We arrive at the venue</li>
+    <li style="margin:6px 0;">Eat & Celebration</li>
+    <li style="margin:6px 0;">Party & Funs</li>
+    <li style="margin:6px 0;">End of celebration / Drop off</li>
+  </ul>
+</div>
+
+  <!-- CTA -->
+   <div style="text-align:center; margin:24px 0;"> <!-- // simplified container -->
+  <div style="margin-bottom:12px;"> <!-- // wrapper for spacing -->
+    <a
+      href="https://e-invitation-v1.vercel.app/api/apple-calendar"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="display:inline-block; width:260px; text-align:center; padding:12px 24px; border-radius:9999px; font-size:16px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border:1px solid rgba(255,255,255,0.15); background-color:rgba(255,255,255,0.8); color:#713f2a; text-decoration:none;"
+    >
+       Add to Apple Calendar
+    </a>
+  </div>
+  <div> <!-- second button wrapper -->
+    <a
+      href="https://e-invitation-v1.vercel.app/api/google-calendar"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="display:inline-block; width:260px; text-align:center; padding:12px 24px; border-radius:9999px; font-size:16px; box-shadow:0 4px 12px rgba(0,0,0,0.1); border:1px solid rgba(255,255,255,0.15); background-color:rgba(255,255,255,0.8); color:#713f2a; text-decoration:none;"
+    >
+      𝐆 Add to Google Calendar
+    </a>
+  </div>
+</div>
+
+      <!-- Footer -->
+      <div style="color:rgba(255,255,255,0.6); text-align:center; font-size:14px;">
+        <p style="margin:4px 0;">By Your Sayang</p>
+        <p style="margin:4px 0;">I can’t wait to play with you and make you smile.</p>
+      </div>
+
     </div>
   </div>
 </div>
