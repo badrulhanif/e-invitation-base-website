@@ -8,7 +8,7 @@ import { TimerItems } from "@/types";
 export default function SplashScreen() {
   const router = useRouter();
 
-  const targetDate = new Date("2025-11-10T00:18:00"); // YYYY-MM-DDTHH:MM:SS
+  const targetDate = new Date("2025-11-10T00:18:00");
 
   const calculateTimeLeft = (): TimerItems => {
     const now = new Date();

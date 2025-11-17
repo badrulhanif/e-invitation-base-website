@@ -71,7 +71,7 @@ export default function Home() {
   }, [hasPlayed]);
 
   useEffect(() => {
-    const saved = sessionStorage.getItem("sayangAccepted");
+    const saved = localStorage.getItem("sayangAccepted");
     if (saved === "true") {
       setAccepted(true);
     }
@@ -99,7 +99,7 @@ export default function Home() {
 
       setSuccessMessage("Your message has been sent successfully!");
       setAccepted(true);
-      sessionStorage.setItem("sayangAccepted", "true");
+      localStorage.setItem("sayangAccepted", "true");
       form.reset();
     } catch (err: unknown) {
       const message =
