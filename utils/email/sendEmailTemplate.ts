@@ -9,7 +9,7 @@ export function sendEmailTemplate() {
 
 
       <!-- Header -->
-      <h2 style="margin:0 0 16px; font-family:'Marcellus', serif; font-size:24px; color:#ffffff;">Birthday Sayang Celebration</h2> 
+      <h2 style="margin:0 0 16px; font-family:'Marcellus', serif; font-size:24px; font-weight:500px; color:#ffffff;">Birthday Sayang Celebration</h2> 
 
       <!-- Intro paragraph -->
       <p style="margin:0 0 36px; font-size:16px; color:rgba(255,255,255,0.8); line-height:1.5;">
@@ -26,11 +26,11 @@ export function sendEmailTemplate() {
   
   <!-- Initiary schedule -->
   <ul style="list-style:none; padding:0; margin:8px 0; color:rgba(255,255,255,0.85); font-size:16px; line-height:1.6;">
-    <li>I will pick you up</li>
-    <li>We arrive at the venue</li>
-    <li>Eat & Celebration</li>
-    <li>Party & Funs</li>
-    <li>End of celebration / Drop off</li>
+    <li style="font-style: italic;">I will pick you up</li>
+    <li style="font-style: italic;">We arrive at the venue</li>
+    <li style="font-style: italic;">Eat & Celebration</li>
+    <li style="font-style: italic;">Party & Funs</li>
+    <li style="font-style: italic;">End of celebration / Drop off</li>
   </ul>
 </div>
 
