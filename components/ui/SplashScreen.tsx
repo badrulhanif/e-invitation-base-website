@@ -54,7 +54,7 @@ export default function SplashScreen() {
         render={(timeLeft: TimerItems | null) =>
           timeLeft ? (
             <div>
-              {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m
+              {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m{" "}
               {timeLeft.seconds}s
             </div>
           ) : null
