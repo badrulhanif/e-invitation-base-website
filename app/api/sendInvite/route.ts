@@ -11,8 +11,8 @@ export async function POST(req: NextRequest) {
   try {
     if (
       !process.env.EMAIL_USER ||
-      !process.env.EMAIL_PASS
-      //   !process.env.ADMIN_EMAIL
+      !process.env.EMAIL_PASS ||
+      !process.env.ADMIN_EMAIL
     ) {
       throw new Error(
         "Missing email configuration. Please check environment variables."
@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"Sayang Saya" <${process.env.EMAIL_USER}>`,
       to: email,
-      //   bcc: process.env.ADMIN_EMAIL,
+      bcc: process.env.ADMIN_EMAIL,
       subject: "Birthday Sayang Celebration",
       html: sendEmailTemplate(),
     });
