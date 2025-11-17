@@ -15,20 +15,9 @@ export default function SplashScreen() {
 
   useEffect(() => {
     setHasMounted(true);
-
-    const setVh = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    };
-
-    setVh();
-    window.addEventListener("resize", setVh);
-
     document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
-
     return () => {
-      window.removeEventListener("resize", setVh);
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
     };
@@ -47,7 +36,7 @@ export default function SplashScreen() {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-[calc(var(--vh,1vh)*100)] z-9999 flex flex-col gap-4 text-xl items-center justify-center text-center overflow-hidden transform transition-transform duration-600 backdrop-blur-md shadow-xl text-white bg-[linear-gradient(to_bottom_right,#242615,#2E2D19,#342814,#3A2312,#1F1812,#2B2623)]/80 ${
+      className={`fixed inset-0 z-9999 flex flex-col gap-4 text-xl items-center justify-center text-center overflow-hidden transform transition-transform duration-600 backdrop-blur-md shadow-xl text-white bg-[linear-gradient(to_bottom_right,#242615,#2E2D19,#342814,#3A2312,#1F1812,#2B2623)]/80 ${
         exiting ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"
       }`}
     >

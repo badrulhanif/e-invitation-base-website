@@ -120,7 +120,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-.splash-screen {
-  height: calc(var(--vh, 1vh) * 100);
-}

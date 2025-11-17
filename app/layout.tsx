@@ -50,7 +50,7 @@ export default function RootLayout({
         className="relative sm:h-screen sm:overflow-hidden overflow-x-hidden overflow-y-auto min-h-screen max-w-full antialiased bg-[linear-gradient(to_bottom_right,#242615,#2E2D19,#342814,#3A2312,#1F1812,#2B2623)]"
       >
         <SplashScreen />
-        <div className="absolute inset-0 -z-10 w-full h-[calc(var(--vh,1vh)*100)]">
+        <div className="absolute inset-0 -z-10">
           <SparklesCore
             background="transparent"
             minSize={0.6}
