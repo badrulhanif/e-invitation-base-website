@@ -132,7 +132,7 @@ export default function Home() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/15" />
-        <div className="absolute flex px-2 py-1  left-1/2 -translate-x-1/2 top-4 sm:top-8 items-center justify-center  whitespace-nowrap min-w-max rounded-full border border-white/10 bg-white/10">
+        <div className="absolute flex px-2 py-1  left-1/2 -translate-x-1/2 top-4 sm:top-8 items-center justify-center whitespace-nowrap min-w-max rounded-full border border-white/10 bg-white/10">
           <Timer
             targetDate={new Date("2026-08-15T14:00:00")}
             render={(timeLeft) => {
