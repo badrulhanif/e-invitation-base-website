@@ -9,7 +9,7 @@ import { marcellus } from "@/config/font";
 
 export default function SplashScreen() {
   // const router = useRouter();
-  const targetDate = new Date("2026-01-01T00:00:00");
+  const targetDate = new Date("2025-12-31T00:00:00");
   const [exiting, setExiting] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
 
